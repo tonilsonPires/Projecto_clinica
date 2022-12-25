@@ -1,0 +1,38 @@
+Minhas Saudaçoes de acordo ao clima 
+
+mini projecto concluído 
+
+Tecnológias usadas: Html5+Css3+Javascript
+
+=============================TELA DE LOGIN========================================================
+
+[IMPORTANTE]
+Fórmulário foram validados usando regex em Html
+Ao fazer login 
+
+E-mail: Admin
+Senha:1234gx
+
+O formulário do E-mail só admite 5 caracteres de texto, maiúscula ou minúscula Ex: Comer ou Ex: sonho
+
+O formulário de Senha só admite 6 caracteres númericos ou texto Ex:123amor ou Ex: 123456 ou ainda Ex: vIAGEM
+
+===============================FINAL DA TELA LOGIN===================================================
+
+
+===============================FORMULÁRIO DE CRUD====================================================
+
+Os formulário de crud também foram valiadados
+
+Os formulário para nome e patologia aceitam caracteres de texto e número Ex: Paludismo 8 por campo
+
+O formulário telefone está validado para o contacto de Angola. Isto quer dizer que deve começar com 9 seguido de 8 dígitos Ex: 935126619
+
+O formulário para Idade não é necessário dígitar, é só escolher a idade, pois está validade no intervalo de 0 á 100
+=======================================================================================================
+
+
+ 
+
+
+

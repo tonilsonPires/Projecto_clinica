@@ -1,0 +1,285 @@
+
+
+
+/*=================FORMTANDO A RESPONSIVIDADE DO LOGIN=============================*/
+@media (max-width: 870px){
+    .container{
+        min-height: 800px;
+        height: 100vh;
+    }
+
+    .container::before{
+        width: 1500px;
+        height: 1500px;
+        left: 30%;
+        bottom: 62%;
+        transform: translateX(-50%);
+        right: initial;
+        top: initial;
+        transition: 2s ease-in-out;
+    }
+
+    .signin-signup{
+        width: 100%;
+        left: 50%;
+        top: 95%;
+        transform: translate(-50%, -100%);
+        transition: 1 .8s ease-in-out;
+    }
+
+    .panels-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+    }
+
+    .panel{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        padding: 2.5rem 8%;
+    }
+
+    .painel .content{
+        padding-right: 15%;
+        transition: .9s .8s ease-in-out;
+    }
+
+    .panel h3{
+        font-size: 1.2rem;
+    }
+    
+    .panel p{
+        font-size: 0.7rem;
+        padding: 0.5rem 0;
+    }
+
+    .btn.btn.transparent{
+        width: 110px;
+        height: 35px;
+        font-size: 0.7rem;
+    }
+    
+    .image{
+        width: 200px;
+        transition: .9s .6s ease-in-out;
+    }
+
+    .left-panel{
+        grid-row: 1 / 2;
+    }
+
+    .right-panel{
+        grid-row: 3 / 4;
+    }
+
+    .panels-container{
+        z-index: 10;
+        grid-template-columns: 1fr;
+    }
+
+    .right-panel .content,
+    .right-panel .image{
+        transform: translateX(300px);
+    }
+
+    .container.container.sign-up-mode::before{
+        transform: translate(-50%, 100%);
+        bottom: 32%;
+        right: initial;
+    }
+
+    .container.container.sign-up-mode .left-image,
+    .container.container.sign-up-mode .left-content{
+        transform: translateY(-300px);
+    }
+
+    .container.container.sign-up-mode .signin-signup{
+        top: 5%;
+        transform: translate(-50%, 0);
+        left: 50%;
+    }
+}
+
+@media (max-width: 570px){
+    form{
+        padding: 0 1.5rem;
+    }
+
+    .image{
+        display: none;
+    }
+
+    .panel-content{
+        padding: .5rem 1rem;
+    }
+    .container::before{
+        bottom: 72%;
+        left: 50%;
+        transform: translate();
+    }
+    .container.sign-up-mode::before{
+        bottom: 28%;
+        left: 50%
+    }
+}
+
+
+/*=================TERMINO  RESPONSIVIDADE DO LOGIN=============================*/
+
+
+/*=================FORMTANDO A RESPONSIVIDADE DA TELA PRINCIPAL============================*/
+/*----------navbar--------*/
+@media only screen and (max-width:768px) {
+    .navbar nav ul {
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background: #21cede;
+      overflow: hidden;
+      transition: max-height 0.5s;
+      text-align: center;
+      z-index: 10;
+    }
+  
+    .navbar nav ul li {
+      display: block;
+      margin: 50px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  
+    .navbar nav ul li a {
+      color: white;
+    }
+  
+    .navbar span {
+      color: white;
+      display: block;
+      cursor: pointer;
+      border: 2px solid white;
+      padding: 5px;
+    }
+  }
+
+  
+/*----------home--------*/
+@media only screen and (max-width:768px) {
+    .home {
+      height: 120vh;
+    }
+  
+    
+    .right {
+      width: 100%;
+    }
+  
+    .home .content {
+      flex-direction: column;
+    }
+  
+    .bottom .icon {
+      display: inline;
+    }
+  
+    .bottom h1 {
+    margin: 0 auto;
+    padding: 0 auto;
+    font-size: 0px;
+    }
+  }
+
+
+
+
+  
+
+/*=================TÉRMINO A RESPONSIVIDADE DA TELA PRINCIPAL=============================*/
+
+
+
+
+/*=================FORMATADNO A RESPONSIVIDADE DA TELA CRUD=============================*/
+@media (max-width:480px){
+    header{
+        position:fixed;
+        width:100%;
+    }
+    .header-title{
+        font-size: 1.5rem;
+    }
+
+    main{
+        padding: 0;
+        margin: 20px 0 0 0;
+        width:100%;
+        box-shadow: none;
+    }
+}
+
+@media(max-width:480px){
+    .button.mobile{
+        color:transparent;
+        font-size:0;
+        width:50px;
+        height:50px;
+        border-radius: 50%;
+        position:fixed;
+        top: 90vh;
+        left: 80vw;
+    }
+    .button.mobile::before{
+        content: "+";
+        color:black;
+        font-size:2rem;
+        width:100%;
+        height:100%;
+    }
+}
+
+
+
+@media (max-width:480px){
+    .modal{
+        top:100%;
+        transition: all 1s ease;
+    }
+    .modal.active{
+        top:0;
+    }
+    .modal-content{
+        margin:0;
+        width:100%;
+        position:fixed;
+    }
+    .modal-field{
+        width:100%;
+    }
+}
+
+
+@media(max-width:480px){
+    .records{
+        border-spacing: 5px;
+    }
+    .records thead{
+        display:none;
+    }
+    .records tr{
+        box-shadow: 0 1px 3px var(--shadow-color);
+    }
+    .records td:not(:first-child){
+        display:flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .records td{
+        margin:10px 0;
+    }
+
+    .records tr:hover{
+        background-color: inherit;
+    }
+}
